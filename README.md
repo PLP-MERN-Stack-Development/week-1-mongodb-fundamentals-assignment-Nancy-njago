@@ -1,24 +1,39 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=19656389&assignment_repo_type=AssignmentRepo)
-# MongoDB Fundamentals Assignment
 
-This assignment focuses on learning MongoDB fundamentals including setup, CRUD operations, advanced queries, aggregation pipelines, and indexing.
+# PLP Bookstore MongoDB Project
 
-## Assignment Overview
+This project demonstrates basic and advanced usage of MongoDB for managing a bookstore database called plp_bookstore. It includes data insertion, queries, aggregation pipelines, indexing, and performance optimization.
 
-You will:
-1. Set up a MongoDB database
-2. Perform basic CRUD operations
-3. Write advanced queries with filtering, projection, and sorting
-4. Create aggregation pipelines for data analysis
-5. Implement indexing for performance optimization
+##  Setup Instructions
+ Local MongoDB
 
-## Getting Started
+1. Install MongoDB Community Server
+2.Run mongod in terminal to start the server
+3.Use mongo shell to interact with the database
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install MongoDB locally or set up a MongoDB Atlas account
-4. Run the provided `insert_books.js` script to populate your database
-5. Complete the tasks in the assignment document
+## Data Initialization
+
+Create Database and Collection
+      js
+         use plp_bookstore
+         db.createCollection("books")
+Insert Sample Books
+Run insert_books.js to insert at least 10 books with the following fields:
+
+title (string)
+
+author (string)
+
+genre (string)
+
+published_year (number)
+
+price (number)
+
+in_stock (boolean)
+
+pages (number)
+
+publisher (string)
 
 ## Files Included
 
@@ -31,14 +46,13 @@ You will:
 - MongoDB (local installation or Atlas account)
 - MongoDB Shell (mongosh) or MongoDB Compass
 
-## Submission
+## Notes
+Use MongoDB Compass or VS Code MongoDB plugin for easier exploration
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+Indexing significantly improves query performance on large collections
 
-1. Complete all tasks in the assignment
-2. Add your `queries.js` file with all required MongoDB queries
-3. Include a screenshot of your MongoDB database
-4. Update the README.md with your specific setup instructions
+Aggregation pipelines are powerful for reporting and analytics
+
 
 ## Resources
 
